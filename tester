@@ -1,0 +1,30 @@
+wait(2)
+
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Potato's Commands";
+	Text = "press f9 to veiw commands";
+	Duration = "5";
+	
+})
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Potato's Commands";
+	Text = "just so you know your gay";
+	Duration = "6";
+    Button1 = "yes";
+    Button2 = "yes";
+})
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Potato's Commands";
+	Text = "when you look at the commands turn off errors";
+	Duration = "7";
+  
+})
+print("Potato Commands c: and thanks for using")
+print("contact me if something is wrong |Pocket_Potato#7724")
+print("~Ns |Noslow") --Activates no slow
+print("~queue") -- teleports
+print("~sw")
+print("~future")
+print("~space")
+print("~namek")
+print("~earth")
