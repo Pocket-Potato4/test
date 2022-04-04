@@ -1,4 +1,11 @@
 wait(2)
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Potato's Commands";
+	Text = "Loading";
+	Duration = "7";
+	
+})
+wait(7)
 
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
