@@ -8,8 +8,7 @@ wait(7)
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
 	Text = "press f9 to veiw commands";
-	Duration = "5";
-	
+	Duration = "5"
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
