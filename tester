@@ -14,7 +14,7 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
-	Text = "Beth Was here";
+	Text = "say ~cmds to veiw commands";
 	Duration = "6";
     Button1 = "mommy beth";
     Button2 = "get out my face";
@@ -24,18 +24,3 @@ game.StarterGui:SetCore("SendNotification",  {
 	Text = "when you look at the commands turn off errors";
 	Duration = "7";
 })
-print("Potato Commands c: and thanks for using")
-print("contact me if something is wrong |Pocket_Potato#7724")
-print("---------------------------------------------------")
-print("~Ns |Noslow") --Activates no slow
-print("~Anchor") -- makes you stuck
-print("~Sb|Spam beans rejoin to stop")
-print("~rj|rejoin")
-print("~open/close tp menu")
-print("---------------------------------------------------")
-print("~earth")
-print("~namek")
-print("~space")
-print("~future")
-print("~sw|secret world")
-print("~queue")
