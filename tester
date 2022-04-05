@@ -28,10 +28,11 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
-print("~Ns |Noslow") --Activates no slow
 print("~queue") -- teleports
 print("~sw")
 print("~future")
 print("~space")
 print("~namek")
 print("~earth")
+print("~Ns |Noslow") --Activates no slow
+print("~Anchor) `` makes you stuck
