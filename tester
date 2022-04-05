@@ -26,6 +26,7 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
+print("---------------------------------------------------")
 print("~Ns |Noslow") --Activates no slow
 print("~Anchor") -- makes you stuck
 print("~Sb|Spam beans rejoin to stop")
@@ -37,4 +38,4 @@ print("~namek")
 print("~space")
 print("~future")
 print("~sw|secret world")
-print("queue")
+print("~queue")
