@@ -3,10 +3,8 @@ game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
 	Text = "Loading";
 	Duration = "7";
-	
 })
 wait(7)
-
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
 	Text = "press f9 to veiw commands";
@@ -15,16 +13,15 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
-	Text = "just so you know your gay";
+	Text = "Beth Was here";
 	Duration = "6";
-    Button1 = "yes";
-    Button2 = "yes";
+    Button1 = "mommy beth";
+    Button2 = "get out my face";
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
 	Text = "when you look at the commands turn off errors";
 	Duration = "7";
-  
 })
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
