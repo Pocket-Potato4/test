@@ -30,4 +30,4 @@ print("~Ns |Noslow") --Activates no slow
 print("~Anchor") -- makes you stuck
 print("~Sb|Spam beans rejoin to stop")
 print("~rj|rejoin")
-print("o~pen/close tp menu")
+print("~open/close tp menu")
