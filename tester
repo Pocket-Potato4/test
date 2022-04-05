@@ -16,8 +16,7 @@ game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
 	Text = "say ~cmds to veiw commands";
 	Duration = "6";
-    Button1 = "mommy beth";
-    Button2 = "get out my face";
+    Button1 = "Close";
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
