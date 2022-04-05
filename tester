@@ -31,4 +31,4 @@ print("~space")
 print("~namek")
 print("~earth")
 print("~Ns |Noslow") --Activates no slow
-print("~Anchor) -- makes you stuck
+print("~Anchor") -- makes you stuck
