@@ -45,6 +45,47 @@ Lplr.Chatted:Connect(function(command)
     end
 end)
 
+local Lplr = game:GetService("Players").LocalPlayer
+local TS = game:GetService("TeleportService")
+
+Lplr.Chatted:Connect(function(command)
+    if command == "~space" then
+        print("Teleporting...")
+        TS:Teleport(478132461, Lplr)
+    end
+end)
+
+local Lplr = game:GetService("Players").LocalPlayer
+local TS = game:GetService("TeleportService")
+
+Lplr.Chatted:Connect(function(command)
+    if command == "~future" then
+        print("Teleporting...")
+        TS:Teleport(569994010, Lplr)
+    end
+end)
+
+local Lplr = game:GetService("Players").LocalPlayer
+local TS = game:GetService("TeleportService")
+
+Lplr.Chatted:Connect(function(command)
+    if command == "~sw" then 
+        print("Teleporting...")
+        TS:Teleport(2046990924, Lplr)
+    end
+end)
+
+local Lplr = game:GetService("Players").LocalPlayer
+local TS = game:GetService("TeleportService")
+
+Lplr.Chatted:Connect(function(command)
+    if command == "~queue" then
+        print("Teleporting...")
+        TS:Teleport(2046990924, Lplr)
+    end
+end)
+
+
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
 print("---------------------------------------------------")
