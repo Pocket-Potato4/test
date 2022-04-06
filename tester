@@ -37,3 +37,13 @@ print("~space")
 print("~future")
 print("~sw|secret world")
 print("~queue")
+end)
+local Lplr = game:GetService("Players").LocalPlayer
+local TS = game:GetService("TeleportService")
+
+Lplr.Chatted:Connect(function(command)
+    if command == "~earth" then
+        print("Teleporting...")
+        TS:Teleport(536102540, Lplr)
+    end
+end)
