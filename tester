@@ -81,7 +81,7 @@ local TS = game:GetService("TeleportService")
 Lplr.Chatted:Connect(function(command)
     if command == "~queue" then
         print("Teleporting...")
-        TS:Teleport(2046990924, Lplr)
+        TS:Teleport(3565304751, Lplr)
     end
 end)
 
