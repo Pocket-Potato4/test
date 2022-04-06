@@ -23,6 +23,8 @@ game.StarterGui:SetCore("SendNotification",  {
 	Text = "when you look at the commands turn off errors";
 	Duration = "7";
 })
+
+
 local Lplr = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
 
