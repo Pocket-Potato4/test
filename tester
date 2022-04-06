@@ -20,7 +20,7 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
-	Text = "when you look at the commands turn off errors";
+	Text = "Commands Loaded";
 	Duration = "7";
 })
 
@@ -87,25 +87,7 @@ end)
 
 local Lplr = game:GetService("Players").LocalPlayer
 
-Lplr.Chatted:Connect(function(command)
-    if command == "~cmds" then
-        print("Commands Loaded")
-       print("Potato Commands c: and thanks for using")
-print("contact me if something is wrong |Pocket_Potato#7724")
-print("---------------------------------------------------")
-print("~Ns |Noslow") --Activates no slow
-print("~Anchor") -- makes you stuck
-print("~Sb|Spam beans rejoin to stop")
-print("~rj|rejoin")
-print("---------------------------------------------------")
-print("~earth")
-print("~namek")
-print("~space")
-print("~future")
-print("~sw|secret world")
-print("~queue")
-    end
-end)
+
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
 print("---------------------------------------------------")
