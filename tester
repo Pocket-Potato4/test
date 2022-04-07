@@ -293,9 +293,8 @@ Moveset = {
 loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
 	end
 end)
-plr.Chatted:Connect(function(command)
-	if command == "~Cmds" then
-		print("Potato Commands c: and thanks for using")
+
+print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
 print("---------------------------------------------------")
 print("~Ns |Noslow --Not Working")
@@ -311,6 +310,3 @@ print("~space --Working")
 print("~future --Working")
 print("~sw|secret world -- Working")
 print("~queue --Working")
-           end
-end)
-
