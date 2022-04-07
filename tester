@@ -242,6 +242,7 @@ print("~Anchor") -- makes you stuck
 print("~Sb|Spam beans rejoin to stop")
 print("~rj|rejoin")
 print("~AutoTop|By NDR")
+print("~AutoBroly|By NDR")
 print("---------------------------------------------------")
 print("~earth")
 print("~namek")
