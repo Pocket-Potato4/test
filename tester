@@ -236,7 +236,7 @@ end)
 local Lplr = game:GetService("Players").LocalPlayer
 
 Lplr.Chatted:Connect(function(command)
-	if command == "~AutoTop" then
+	if command == "~AutoHardTop" then
 		print("Starting")
 -----------------------------------------------------------------------------------------------------
 -------------------------------------------Made By NabilDr#488/Creado por NabilDr#4888---------------
@@ -294,6 +294,7 @@ loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/N
 	end
 end)
 
+
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
 print("---------------------------------------------------")
@@ -301,7 +302,7 @@ print("~Ns |Noslow --Not Working")
 print("~Anchor -- Not Working")
 print("~Sb|Spam beans --Not Working")
 print("~rj|rejoin -- Not Working")
-print("~AutoTop|~AutoH|TopBy NDR -- Working")
+print("~AutoTop|~AutoHardTop|TopBy NDR -- Working")
 print("~AutoBroly|By NDR -- Working")
 print("---------------------------------------------------")
 print("~earth -- Working")
