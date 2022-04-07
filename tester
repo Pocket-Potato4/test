@@ -102,7 +102,7 @@ Lplr.Chatted:Connect(function(command)
 
 Settings  = {
 
-AutoWish = true;
+AutoWish = false;
 Wish = "Zenni";
 ChargeForm = 2;
 FormType = "h";
