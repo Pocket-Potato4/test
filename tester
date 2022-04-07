@@ -87,6 +87,65 @@ end)
 
 local Lplr = game:GetService("Players").LocalPlayer
 
+Lplr.Chatted:Connect(function(command)
+	if command == "~AutoTop" then
+		print("Starting")
+-----------------------------------------------------------------------------------------------------
+-------------------------------------------Made By NabilDr#488/Creado por NabilDr#4888---------------
+
+------------------------------------------------------Dont steal the script--------------------------
+
+
+--[ For Top : Zenni or zenni / Exp or exp / Prestige or prestige / Level Cap or lvl cap ]--
+--[ For Hard Top : Death or death / God or god / Nothing or nothing ]--
+
+
+Settings  = {
+
+AutoWish = true;
+Wish = "Zenni";
+ChargeForm = 2;
+FormType = "h";
+ExtraTime = 0;
+AutoPunchLowKi = true;
+RespawnLowKi = true;
+StatsAFK = true;
+AutoStats = "Phys-Damage";
+PetTime = 60;
+AutoSenzu = true;
+ByPassExplosiveWave = true;
+Noslow = true;
+RejoinTime = 1000;
+HideQueue = false;
+TOP = "Normal"; --[ Normal / Hard ]--
+
+}
+
+
+Moveset = {
+
+    "Neo Wolf Fang Fist";
+    "Wolf Fang Fist";
+    "Anger Rush";
+    "Flash Strike";
+    "Flash Skewer";
+    "Meteor Crash";
+    "Deadly Dance";
+    "TS Molotov";
+    "Sweep Kick";
+    "God Slicer";
+
+}
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
+	end
+end)
+
 
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
@@ -95,6 +154,7 @@ print("~Ns |Noslow") --Activates no slow
 print("~Anchor") -- makes you stuck
 print("~Sb|Spam beans rejoin to stop")
 print("~rj|rejoin")
+print("~AutoTop|By NDR")
 print("---------------------------------------------------")
 print("~earth")
 print("~namek")
