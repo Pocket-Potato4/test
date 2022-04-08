@@ -293,8 +293,14 @@ Moveset = {
 loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
 	end
 end)
+local Lplr = game:GetService("Players").LocalPlayer
 
-
+Lplr.Chatted:Connect(function(command)
+    if command == "~Anchor" then
+        print("Anchoring")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    end
+end)
 print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
 print("---------------------------------------------------")
