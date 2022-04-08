@@ -293,6 +293,8 @@ Moveset = {
 loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
 	end
 end)
+
+
 local Lplr = game:GetService("Players").LocalPlayer
 
 Lplr.Chatted:Connect(function(command)
@@ -305,7 +307,7 @@ print("Potato Commands c: and thanks for using")
 print("contact me if something is wrong |Pocket_Potato#7724")
 print("---------------------------------------------------")
 print("~Ns |Noslow --Not Working")
-print("~Anchor -- Not Working")
+print("~Anchor --Working Sorta")
 print("~Sb|Spam beans --Not Working")
 print("~rj|rejoin -- Not Working")
 print("~AutoTop|~AutoHardTop|TopBy NDR -- Working")
