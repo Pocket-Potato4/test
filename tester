@@ -14,7 +14,7 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "Potato's Commands";
-	Text = "thanks Kazuya#0002 for helping";
+	Text = "You're Gay";
 	Duration = "6";
     Button1 = "Close";
 })
