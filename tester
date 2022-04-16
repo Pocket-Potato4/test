@@ -75,19 +75,21 @@ Player.Chatted:Connect(function(command)
 end)
 Player.Chatted:Connect(function(command)
 	if command == ".zaros" then
-		print("Teleporting...")
 		TS:Teleport(2651456105, Player)
 	end
 end)
 Player.Chatted:Connect(function(command)
 	if command == ".anchor" then
-		print("Teleporting...")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 	end
 end)
 Player.Chatted:Connect(function(command)
 	if command == ".unanchor" then
-		print("Teleporting...")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+	end
+end)
+Player.Chatted:Connect(function(command)
+	if command == ".InfY" then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end
 end)
