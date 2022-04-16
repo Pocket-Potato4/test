@@ -31,6 +31,7 @@ Player.Chatted:Connect(function(command)
 		print(".anchor|.unanchor")
 		print(".sr|stylelist reset")
 		print(".iy|InfiniteYield")
+		print(".hr|Hard Reset")
 		game.StarterGui:SetCore("SendNotification",  {
 			Title = "Potato's Commands";
 			Text = "Commands Loaded";
@@ -92,5 +93,10 @@ end)
 Player.Chatted:Connect(function(command)
 	if command == ".iy" then wait(.2)
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+end)
+Player.Chatted:Connect(function(command)
+	if command == ".hr" then
+		game.Players.LocalPlayer.Character:BreakJoints()
 	end
 end)
