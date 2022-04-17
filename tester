@@ -1,4 +1,4 @@
-local KickMessage = "you are not whitelisted"
+local KickMessage = "You are not whitelisted Contact Pocket_Potato#7724 to be whitelisted"
 local Player = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
 
