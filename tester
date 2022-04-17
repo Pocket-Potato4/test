@@ -2,7 +2,7 @@ local KickMessage = "You are not whitelisted Contact Pocket_Potato#7724 to be wh
 local Player = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
 
-if Player.UserId == 2385124288 or 107889291 then 
+if Player.UserId == 107889291 then 
 	print("you are whitelisted")
 	game.StarterGui:SetCore("SendNotification",  {
 		Title = "Potato's Commands";
