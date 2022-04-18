@@ -2,22 +2,6 @@ local KickMessage = "You are not whitelisted Contact Pocket_Potato#7724 to be wh
 local Player = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
 
-if Player.UserId == 2385124288 then 
-	print("you are whitelisted")
-	game.StarterGui:SetCore("SendNotification",  {
-		Title = "Potato's Commands";
-		Text = "You have been Whitelisted";
-		Duration = "7";
-	})
-	game.StarterGui:SetCore("SendNotification",  {
-		Title = "Potato's Commands";
-		Text = "Type .cmds to veiw commands";
-		Duration = "7";
-	})
-else	
-	Player:Kick(KickMessage)
-end
-
 Player.Chatted:Connect(function(command)
 	if command == ".cmds" then
 		print(".earth")
