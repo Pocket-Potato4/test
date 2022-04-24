@@ -18,6 +18,7 @@ Player.Chatted:Connect(function(command)
 		print(".iy|InfiniteYield")
 		print(".hr|Hard Reset")
 		print(".autotop")
+		print(".remove | removes level and wings")
 		game.StarterGui:SetCore("SendNotification",  {
 			Title = "Potato's Commands";
 			Text = "Commands Loaded";
