@@ -156,5 +156,10 @@ Player.Chatted:Connect(function(command)
 		game.Players.LocalPlayer.Character.RebirthWings.Handle:Destroy()
 	end);
 end);
+                RS.Stepped:connect(function()
+    pcall(function()
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+    end);
+end);
 	end
 end)
