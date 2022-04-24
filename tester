@@ -1,6 +1,7 @@
 local KickMessage = "You are not whitelisted Contact Pocket_Potato#7724 to be whitelisted"
 local Player = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
+local RS = game:GetService("RunService")
 
 Player.Chatted:Connect(function(command)
 	if command == ".cmds" then
@@ -146,5 +147,14 @@ Player.Chatted:Connect(function(command)
 
 
 		loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
+	end
+end)
+Player.Chatted:Connect(function(command)
+	if command == ".wings" then
+		RS.Stepped:Connect(function()
+	pcall(function()
+		game.Players.LocalPlayer.Character.RebirthWings.Handle:Destroy()
+	end);
+end);
 	end
 end)
