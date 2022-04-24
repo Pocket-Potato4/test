@@ -70,16 +70,31 @@ end)
 Player.Chatted:Connect(function(command)
 	if command == ".anchor" then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "you have been anchored";
+			Duration = "7";
+		})
 	end
 end)
 Player.Chatted:Connect(function(command)
 	if command == ".unanchor" then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "You have been UnAnchored";
+			Duration = "7";
+		})
 	end
 end)
 Player.Chatted:Connect(function(command)
 	if command == ".iy" then wait(.2)
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "Loaded Inf Yield";
+			Duration = "7";
+		})
 	end
 end)
 Player.Chatted:Connect(function(command)
@@ -148,6 +163,11 @@ Player.Chatted:Connect(function(command)
 
 
 		loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "Ndr AutoTop Started";
+			Duration = "7";
+		})
 	end
 end)
 Player.Chatted:Connect(function(command)
@@ -162,5 +182,10 @@ end);
         game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
     end);
 end);
+game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "Level And Wings Hidden";
+			Duration = "7";
+		})
 	end
 end)
