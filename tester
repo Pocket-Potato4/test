@@ -2,6 +2,16 @@ local KickMessage = "You are not whitelisted Contact Pocket_Potato#7724 to be wh
 local Player = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
 local RS = game:GetService("RunService")
+game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "your prefix is '.'";
+			Duration = "7";
+		})
+		game.StarterGui:SetCore("SendNotification",  {
+			Title = "Potato's Commands";
+			Text = "Type .cmds to view commands";
+			Duration = "7";
+		})
 
 Player.Chatted:Connect(function(command)
 	if command == ".cmds" then
