@@ -151,7 +151,7 @@ Player.Chatted:Connect(function(command)
 	end
 end)
 Player.Chatted:Connect(function(command)
-	if command == ".wings" then
+	if command == ".remove" then
 		RS.Stepped:Connect(function()
 	pcall(function()
 		game.Players.LocalPlayer.Character.RebirthWings.Handle:Destroy()
