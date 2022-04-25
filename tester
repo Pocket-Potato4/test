@@ -1,4 +1,7 @@
-local KickMessage = "You are not whitelisted Contact Pocket_Potato#7724 to be whitelisted"
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
 local Player = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
 local RS = game:GetService("RunService")
