@@ -1,201 +1,100 @@
+RespawnBind = "-"
+helpmsg = "respawn/ Respawns ya where you were\ncrespawn changes your bind and if you press the bind it does respawn\nsplit, splits you in half\nstats tells you a player's stats\nreap, soulreaps a player "
 
 local Player = game:GetService("Players").LocalPlayer
-local TS = game:GetService("TeleportService")
-local RS = game:GetService("RunService")
-game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "your prefix is '.'";
-			Duration = "7";
-		})
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "Type .cmds to view commands";
-			Duration = "7";
-		})
+local Tws = game:GetService("TweenService")
+local Rep = game:GetService("ReplicatedStorage")
 
-Player.Chatted:Connect(function(command)
-	if command == ".cmds" then
-		print(".earth")
-		print(".namek")
-		print(".space")
-		print(".future")
-		print(".sw")
-		print(".queue")
-		print(".zaros")
-		print(".ns|noslow| not working")
-		print(".anchor|.unanchor")
-		print(".sr|stylelist reset| not working")
-		print(".iy|InfiniteYield")
-		print(".hr|Hard Reset")
-		print(".autotop | By Ndr")
-		print(".remove | removes level and wings")
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "Commands Loaded";
-			Duration = "7";
-		})
+local function respawn()
+	local pos0 = Player.Character.UpperTorso.Position.X
+	local pos1 = Player.Character.UpperTorso.Position.Y
+	local pos2 = Player.Character.UpperTorso.Position.Z
+	Rep.RemoteEvent:FireServer({"Respawn"})
+	wait(1.7)
+	Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(pos0,pos1,pos2)}):Play()
+end
+
+Player.Chatted:Connect(function(msg)
+	if msg == Prefix.."cmds" then
+		print("Here are the commands,\ncrespawn ___ --Bind|respawn\nsplit\nstats [player]\ngoto\nreap [player]\nhelp")
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".earth" then
-		print("Teleporting...")
-		TS:Teleport(536102540, Player)
+
+Player.Chatted:Connect(function(msg)
+	local split = msg:split(" ")
+	if Prefix.."crespawn" == split[1] then
+		local NRB = split[2]
+		RespawnBind = split[2]
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".namek" then
-		print("Teleporting...")
-		TS:Teleport(882399924, Player)
+
+Player.Chatted:Connect(function(msg)
+	if msg == Prefix.."binds" then
+		print("here are your keybinds".."\nPrefix: "..Prefix.."\nRespawn Bind: "..RespawnBind)
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".space" then
-		print("Teleporting...")
-		TS:Teleport(478132461, Player)
+
+Player.Chatted:Connect(function(msg)
+	if msg == Prefix.."disable" then
+		Prefix = "dqond qoin diqn dioqnwdobquiwdb iuqldqndvbqd"
+		RespawnBind = "dqond qoin diqn dioqnwdobquiwdb iuqldqndvbqd"
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".future" then
-		print("Teleporting...")
-		TS:Teleport(569994010, Player)
+
+Player:GetMouse().KeyDown:Connect(function(bind)
+	if bind == RespawnBind then
+		respawn()
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".sw" then
-		print("Teleporting...")
-		TS:Teleport(2046990924, Player)
+
+Player.Chatted:Connect(function(msg)
+	if msg == Prefix.."respawn" then
+		respawn()
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".queue" then
-		print("Teleporting...")
-		TS:Teleport(3565304751, Player)
+
+Player.Chatted:Connect(function(msg)
+	local Split = msg:split(" ")
+	if Prefix.."stats" == Split[1] then
+		local player = Split[2]
+		local Fplayer = game.Players:FindFirstChild(player)
+
+		if Fplayer then
+			print("\n\n\nhere are "..Fplayer.Name.." stats".."\nFist: "..Fplayer.PrivateStats.FistStrength.Value.."\nBT: "..Fplayer.PrivateStats.BodyToughness.Value.."\nPsychic: "..Fplayer.PrivateStats.PsychicPower.Value)
+		end 
+	end
+end) 
+
+Player.Chatted:Connect(function(msg)
+	if msg == Prefix.."split" then
+		Player.Character.UpperTorso.Waist:Remove()
+
+	end 
+end)
+
+Player.Chatted:Connect(function(msg)
+	local split = msg:split(" ")
+	if Prefix.."reap" == split[1] then
+		local plr = split[2]
+		local Fplr = game.Players:FindFirstChild(plr)
+
+		if Fplr then
+
+
+			local args = {
+				[1] = {
+					[1] = "Skill_SoulReap",
+					[2] = Fplr
+				}
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		end  
 	end
 end)
-Player.Chatted:Connect(function(command)
-	if command == ".zaros" then
-		TS:Teleport(2651456105, Player)
-	end
-end)
-Player.Chatted:Connect(function(command)
-	if command == ".anchor" then
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "you have been anchored";
-			Duration = "7";
-		})
-	end
-end)
-Player.Chatted:Connect(function(command)
-	if command == ".unanchor" then
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "You have been UnAnchored";
-			Duration = "7";
-		})
-	end
-end)
-Player.Chatted:Connect(function(command)
-	if command == ".iy" then wait(.2)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "Loaded Inf Yield";
-			Duration = "7";
-		})
-	end
-end)
-Player.Chatted:Connect(function(command)
-	if command == ".hr" then
-		game.Players.LocalPlayer.Character:BreakJoints()
-	end
-end)
-Player.Chatted:Connect(function(command)
-	if command == ".autotop" then
-		print("AutoTop running")
-		-----------------------------------------------------------------------------------------------------
-		-------------------------------------------Made By NabilDr#488/Creado por NabilDr#4888---------------
 
-		------------------------------------------------------Dont steal the script--------------------------
-
-
-		--[ For Top : Zenni or zenni / Exp or exp / Prestige or prestige / Level Cap or lvl cap ]--
-		--[ For Hard Top : Death or death / God or god / Nothing or nothing ]--
-
-
-		Settings  = {
-
-			AutoWish = true;
-			Wish = "Zenni";
-			ChargeForm = 0;
-			FormType = "g";
-			ExtraTime = 0;
-			AutoPunchLowKi = true;
-			RespawnLowKi = true;
-			StatsAFK = true;
-			AutoStats = "Phys-Damage";
-			PetTime = 60;
-			AutoSenzu = true;
-			ByPassExplosiveWave = true;
-			Noslow = true;
-			RejoinTime = 1000;
-			HideQueue = false;
-			TOP = "Normal"; --[ Normal / Hard ]--
-
-		}
-
-
-		Moveset = {
-
-			"Neo Wolf Fang Fist";
-			"Wolf Fang Fist";
-			"Anger Rush";
-			"Flash Strike";
-			"Flash Skewer";
-			"Meteor Crash";
-			"Deadly Dance";
-			"TS Molotov";
-			"Sweep Kick";
-			"God Slicer";
-			"Mach Kick";
-			"Final Blow";
-			"Strong Kick";
-			"Drop Kick";
-			"Deadly Dance";
-			"Kick Barrage";
-		}
-
-
-
-		-----------------------------------------------------------------------------------------------------
-
-
-		loadstring(game:HttpGet'https://warlinendr.xyz/ScriptingZonaNDR/AutoTOP-NDR-V3/NDR.php')()
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "Ndr AutoTop Started";
-			Duration = "7";
-		})
-	end
-end)
-Player.Chatted:Connect(function(command)
-	if command == ".remove" then
-		RS.Stepped:Connect(function()
-	pcall(function()
-		game.Players.LocalPlayer.Character.RebirthWings.Handle:Destroy()
-	end);
-end);
-                RS.Stepped:connect(function()
-    pcall(function()
-        game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
-    end);
-end);
-game.StarterGui:SetCore("SendNotification",  {
-			Title = "Potato's Commands";
-			Text = "Level And Wings Hidden";
-			Duration = "7";
-		})
-	end
+Player.Chatted:Connect(function(msg)
+    if msg == Prefix.."help" then
+        print(helpmsg)
+    end
 end)
